@@ -186,3 +186,8 @@ helm install rancher rancher-latest/rancher -n cattle-system -f rancher-values.y
 ```
 
 :::
+
+### Troubleshooting
+
+If, after a restore, the Fleet controller is unable to communicate with Fleet agents, this may mean that Kubernetes API
+server URLs have changed. Restarting Fleet agents should fix this.

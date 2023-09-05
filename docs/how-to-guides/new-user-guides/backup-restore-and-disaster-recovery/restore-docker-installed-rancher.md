@@ -74,3 +74,8 @@ Using a [backup](back-up-docker-installed-rancher.md) that you created earlier, 
     ```
 
 1.  Wait a few moments and then open Rancher in a web browser. Confirm that the restore succeeded and that your data is restored.
+
+## Troubleshooting
+
+If, after a restore, the Fleet controller is unable to communicate with Fleet agents, this may mean that Kubernetes API
+server URLs have changed. Restarting Fleet agents should fix this.
